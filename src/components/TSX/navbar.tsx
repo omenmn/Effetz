@@ -1,13 +1,15 @@
 import { component$ } from "@builder.io/qwik";
-import "~/components/component.css";
+import "~/components/TSX/component.css";
 
 export const Navbar = component$(() => {
   return (
     <div class="nav-container">
-      <div class="nav-name">Effetz</div>
+      <a href="/" class="nav-name">
+        Effectz
+      </a>
       <div class="nav-options">
-        <button class="nav-button">About Effetz</button>
-        <button class="nav-button">All Effetz</button>
+        <button class="nav-button">Components</button>
+        <button class="nav-button">About</button>
       </div>
     </div>
   );

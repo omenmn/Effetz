@@ -1,0 +1,27 @@
+.nav-container {
+    padding: 10px;
+    display: flex;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    justify-content: space-between;
+}
+
+.nav-button {
+    border: 0;
+    padding: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: transparent;
+    color: whitesmoke;
+    transition: all 300ms;
+    border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: #687999;
+}
+
+.nav-name {
+    font-size: 20px;
+    text-align: center;
+}

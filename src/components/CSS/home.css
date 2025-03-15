@@ -1,0 +1,46 @@
+.content-cont {
+    padding: 30px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+    z-index: 100;
+}
+
+.tagline {
+    font-size: 3em;
+    width: 40vw;
+}
+
+b {
+    color:rgb(136, 22, 243);
+}
+
+.description {
+    font-size: 1em;
+}
+
+.button {
+    margin-top: 40px;
+    background-color: rgb(156, 75, 233);
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    color: #ebeaea;
+    transition: all 200ms;
+}
+
+.button:hover {
+    background-color: rgb(136, 22, 243);
+}
+
+@media only screen and (max-width: 600px) {
+    .tagline {
+        width: 60vw;
+        font-size: 2em;
+    }
+
+    .content-cont {
+        padding-left: 10vw;
+    }
+}
