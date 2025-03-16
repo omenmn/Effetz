@@ -7,8 +7,36 @@
     z-index: 100;
 }
 
+.about-cont {
+    padding: 30px;
+    height: 70vh;
+    padding-left: 10vw;
+}
+
 .tagline {
-    font-size: 3em;
+    font-size: 50px;
+    width: 40vw;
+}
+
+.tagline b {
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    transition: all 100ms ;
+}
+
+.tagline b:hover {
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+    font-size: 55px;
+    transform: rotateX(90deg);
+}
+
+.sec1 h1 {
+    font-size: 50px;
     width: 40vw;
 }
 
@@ -17,30 +45,68 @@ b {
 }
 
 .description {
-    font-size: 1em;
+    font-size: 25px;
+    color: rgb(180, 181, 204);
+    width: 30vw;
 }
 
 .button {
     margin-top: 40px;
     background-color: rgb(156, 75, 233);
     border: 0;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 40px;
     color: #ebeaea;
     transition: all 200ms;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.svg-arrow {
+    width: 30px;
+    height: 30px;
+    display: block;
+    transition: all 400ms;
+}
+
+.button:hover .svg-arrow {
+    transform: translateX(10px);
 }
 
 .button:hover {
     background-color: rgb(136, 22, 243);
 }
 
-@media only screen and (max-width: 600px) {
+@keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+@media only screen and (max-width: 900px) {
     .tagline {
         width: 60vw;
-        font-size: 2em;
+        font-size: 30px;
+    }
+
+    .tagline b:hover {
     }
 
     .content-cont {
         padding-left: 10vw;
+    }
+
+    .svg-arrow {
+        display: none;
     }
 }

@@ -4,6 +4,8 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 .nav-button {
